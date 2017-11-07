@@ -1,3 +1,15 @@
+body {
+  background: orange;
+  text-align: center;
+}
+
+#toEat {
+  
+}
+#eaten {
+  
+}
+
 li {
   padding: 5px;
   margin: 5px;
