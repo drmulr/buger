@@ -1,30 +1,30 @@
 <container>
-  <img src="assets/images/burger.jpg" alt="burger">
+  <img src="assets/images/burger.png" alt="burger" height="100" width="150">
   <h1>Eat that burger!</h1>
 
 
   <div class="row">
-
 
     <div class="col-sm-6">
       <div id="toEat">
         <h2>Ready to Eat!</h2>
         <ul>
           {{#each burgers}} {{#unless eaten}}
-          <p>{{ id }}. {{ name }}</p>
-          <button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
-		    {{#if eaten}}{{else}}EAT!{{/if}}
-	    </button> {{/unless}} {{/each}}
+          <li>
+            <p>{{ name }} <button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
+		          {{#if eaten}}{{else}}EAT!{{/if}}
+	           </button></p>
+            {{/unless}}
+          </li>
+          {{/each}}
         </ul>
       </div>
     </div>
 
 
-
-
     <div class="col-sm-6">
       <div id="eaten">
-        <h2>Eaten!</h2>
+        <h2>All Done!</h2>
         <ul>
           {{#each burgers}} {{#if eaten}}
           <p>{{ id }}. {{ name }}</p>
@@ -32,8 +32,6 @@
         </ul>
       </div>
     </div>
-
-
 
   </div>
 
