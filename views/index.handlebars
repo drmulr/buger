@@ -1,6 +1,11 @@
-<container>
-  <img src="assets/images/burger.png" alt="burger" height="100" width="150">
+<div class="container">
+  <div>
+
+      <img src="assets/images/burger.png" alt="burger" height="100" width="150">
   <h1>Eat that burger!</h1>
+
+  </div>
+
 
 
   <div class="row">
@@ -8,16 +13,15 @@
     <div class="col-sm-6">
       <div id="toEat">
         <h2>Ready to Eat!</h2>
-        <ul>
           {{#each burgers}} {{#unless eaten}}
-          <li>
+          
             <p>{{ name }} <button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
 		          {{#if eaten}}{{else}}EAT!{{/if}}
 	           </button></p>
             {{/unless}}
-          </li>
+          
           {{/each}}
-        </ul>
+        
       </div>
     </div>
 
@@ -25,11 +29,13 @@
     <div class="col-sm-6">
       <div id="eaten">
         <h2>All Done!</h2>
-        <ul>
+        
           {{#each burgers}} {{#if eaten}}
-          <p>{{ id }}. {{ name }}</p>
+          
+          <p>{{ name }}</p>
           {{/if}} {{/each}}
-        </ul>
+          
+        
       </div>
     </div>
 
@@ -48,4 +54,4 @@
     <button type="submit">Add Burger</button>
   </form>
 
-</container>
+</div>
