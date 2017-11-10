@@ -1,11 +1,13 @@
 body {
   background: orange;
   text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 
-/* container {
+.container {
   width: 70%;
-} */
+}
 
 #toEat {
   text-align: center;
@@ -18,12 +20,16 @@ body {
 ul {
   list-style: none;
 }
-
-
 li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
 }
 
 .label {
@@ -38,4 +44,11 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.burgImgMain {
+  margin: 10px;
+}
+.colHead {
+  margin: 10px;
 }

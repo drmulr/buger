@@ -17,15 +17,12 @@ router.get("/", function(req, res) {
 });
 
 
-
-
 router.post("/api/burgers", function(req, res) {
   burger.create(["name", "eaten"], [req.body.name, req.body.eaten], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
   });
 });
-
 
 
 router.put("/api/burgers/:id", function(req, res) {
@@ -43,6 +40,7 @@ router.put("/api/burgers/:id", function(req, res) {
     }
   });
 });
+
 
 router.delete("/api/cats/:id", function(req, res) {
   var condition = "id = " + req.params.id;
