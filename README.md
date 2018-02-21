@@ -10,3 +10,5 @@ I've created a burger logger with MySQL, Node, Express, Handlebars and an ORM. F
 • Whenever a user submits a burger's name, the app displays the burger on the left side of the page -- waiting to be devoured.
 • Each burger in the waiting area also has a Eat it! button. When the user clicks it, the burger will move to the right side of the page.
 • Burgers are stored in a database, whether eaten or not.
+
+<img width="175" alt="portfolio-burger" src="https://user-images.githubusercontent.com/29293369/36496630-dcae8f88-1706-11e8-899a-ce7356089b39.png">

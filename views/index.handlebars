@@ -9,9 +9,11 @@
         <h2 class="colHead">Ready to Eat!</h2>
         {{#each burgers}} {{#unless eaten}}
 
-        <p>{{ name }} <button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
-		          {{#if eaten}}{{else}}EAT!{{/if}}
-	           </button></p>
+        <p>{{ name }}
+          <button class="change-eaten" data-id="{{id}}" data-neweaten="{{eaten}}">
+                  {{#if eaten}}{{else}}EAT!{{/if}}
+                </button>
+        </p>
         {{/unless}} {{/each}}
 
       </div>
